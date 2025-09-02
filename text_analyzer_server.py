@@ -189,7 +189,7 @@ def check_text_length_limit(text: str, max_length: int = 1000) -> Dict[str, Any]
     }
 
 # 리소스 정의
-@mcp.resource("text_analyzer://help")
+@mcp.resource("file://help")
 def get_help() -> str:
     """
     텍스트 분석기 사용법 도움말을 제공합니다.
